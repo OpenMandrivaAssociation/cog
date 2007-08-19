@@ -1,6 +1,6 @@
 %define name cog
 %define version 0.8.0
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name: %name
 Summary: Another Gnome config tool
@@ -65,5 +65,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%{name}*
 %{_datadir}/applications/%name.desktop
 %{_datadir}/cog
-
-
