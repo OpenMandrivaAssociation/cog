@@ -13,6 +13,7 @@ Source: http://www.krakoa.dk/progs/cog/%{name}-%{version}.tar.bz2
 Source10:   %{name}-16.png
 Source11:   %{name}-32.png
 Source12:   %{name}-48.png
+BuildRoot: %{_tmppath}/build-root-%{name}
 
 BuildRequires: automake >= 1.4
 Buildrequires: libgnomeui2-devel >= 2.0
