@@ -35,13 +35,6 @@ install -m644 %SOURCE10 -D %{buildroot}/%_miconsdir/%name.png
 install -m644 %SOURCE11 -D %{buildroot}/%_iconsdir/%name.png
 install -m644 %SOURCE12 -D %{buildroot}/%_liconsdir/%name.png
 
-mkdir -p %{buildroot}/%{_menudir}
-cat << EOF > %{buildroot}/%{_menudir}/%{name}
-?package(%name):command="%{_bindir}/cog" icon="%name.png" \
-                needs="X11" section="System/Configuration/Other" \
- title="Cog" longtitle="Edit your gnome preferences" needs="gnome" \
-xdg="true"
-EOF
 
 %find_lang %name --all-name
 
@@ -58,7 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,0755)
 %doc NEWS README TODO AUTHORS
 %{_bindir}/*
-%{_menudir}/%{name}
 %{_iconsdir}/%name.png
 %{_liconsdir}/%name.png
 %{_miconsdir}/%name.png
