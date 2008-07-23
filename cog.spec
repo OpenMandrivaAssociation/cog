@@ -1,6 +1,6 @@
 %define name cog
 %define version 0.8.0
-%define release %mkrel 4
+%define release %mkrel 6
 
 Name: %name
 Summary: Another Gnome config tool
