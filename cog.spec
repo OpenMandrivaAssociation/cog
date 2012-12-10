@@ -61,3 +61,58 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%{name}*
 %{_datadir}/applications/%name.desktop
 %{_datadir}/cog
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.8.0-8mdv2011.0
++ Revision: 617402
+- the mass rebuild of 2010.0 packages
+
+* Wed Sep 02 2009 Thierry Vignaud <tv@mandriva.org> 0.8.0-7mdv2010.0
++ Revision: 424912
+- rebuild
+
+* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.8.0-6mdv2009.0
++ Revision: 243591
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Fri Jan 11 2008 Thierry Vignaud <tv@mandriva.org> 0.8.0-4mdv2008.1
++ Revision: 148082
+- drop old menu
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Sun Aug 19 2007 Olivier Thauvin <nanardon@mandriva.org> 0.8.0-4mdv2008.0
++ Revision: 66743
+- rebuild
+
+
+* Fri Aug 04 2006 Olivier Thauvin <nanardon@mandriva.org>
++ 08/04/06 23:49:40 (53141)
+- xdg menu
+
+* Fri Aug 04 2006 Olivier Thauvin <nanardon@mandriva.org>
++ 08/04/06 23:45:52 (53140)
+Import cog
+
+* Mon Apr 17 2006 Olivier Thauvin <nanardon@mandriva.org> 0.8.0-2mdk
+- rebuild
+
+* Mon Mar 28 2005 Olivier Thauvin <nanardon@mandrake.org> 0.8.0-1mdk
+- 0.8.0
+- update url
+- %%mkrel
+- fix menu entry
+
+* Wed Feb 11 2004 Laurent MONTEL <lmontel@mandrakesoft.com> 0.6.1-2mdk
+- Fix menu entry
+
+* Sun Sep 14 2003 Olivier Thauvin <thauvin@aerov.jussieu.fr> 0.6.1-1mdk
+- From Bellegarde Cedric <gnumdk@wanadoo.fr>
+	- Make a spec file
+
