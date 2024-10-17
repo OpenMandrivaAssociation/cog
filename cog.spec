@@ -7,7 +7,7 @@ Summary: Another Gnome config tool
 Version: %{version}
 Release: %{release}
 License: GPL
-Url: http://www.krakoa.dk/linux-software.html
+Url: https://www.krakoa.dk/linux-software.html
 Group: Graphical desktop/GNOME
 Source: http://www.krakoa.dk/progs/cog/%{name}-%{version}.tar.bz2
 Source10:   %{name}-16.png
